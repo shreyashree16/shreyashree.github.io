@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="stylenew.css">
+    <script src="https://kit.fontawesome.com/83479ba95a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Interests</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p style="font-family:courier;">Developer</p>
+                <h1 >Hi, I'm <span>Shreya</span><br>Shree from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------about----- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aboutme.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a quick learner and enjoy learning about new technologies and tools. I believe that keeping up with the latest trends in the field of computer science is essential in order to stay ahead. I take great pride in my work and always strive to deliver the best possible results. I am confident in my abilities and I'm excited about the opportunities that lie ahead in my career.</p>
+               
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                    <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    <p class="tab-links" onclick="opentab('project')"> Projects</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Competitive Coding</span><br>Fighting Problems Since:2020</li>
+                        <li><span>AI/ML</span><br>Building AI/ML models.</li>
+                        <li><span>Web Development</span><br>Trying Web App Development.</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-Present</span><br>B.Tech at Graphic era deeemed to be university</li>
+                        <li><span>2021</span><br>Intermediate at Sunbeam School Varuna</li>
+                        <li><span>2019</span><br>High School at St John's School</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="project">
+                    <ul>
+                        <li><span>Human detection and counting people</span><br>using deep learning and algorithms</li>
+                        <li><span>Portfolio website</span><br>Using HTML CSS REACT</li>
+                        <li><span>Pneumonia Detection Model</span><br>Using Python and libraries like OpenCV, Keras, numPy & Tensorflow.</li>
+                        <li><span>FitApp</span><br>A social media app for fitness enthusiasts.</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!----------services---------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Areas Of Interest</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, magni sint 
+                        doloremque unde cum omnis nesciunt
+                         laborum eveniet aut, sed consequuntur deleniti quam optio possimus
+                          repellat inventore ullam? Laboriosam, fuga.</p>
+                          <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-crop"></i>
+                    <h2>Competitive Coding</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, magni sint 
+                        doloremque unde cum omnis nesciunt
+                         laborum eveniet aut, sed consequuntur deleniti quam optio possimus
+                          repellat inventore ullam? Laboriosam, fuga.</p>
+                          <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>AI/ML</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, magni sint 
+                        doloremque unde cum omnis nesciunt
+                         laborum eveniet aut, sed consequuntur deleniti quam optio possimus
+                          repellat inventore ullam? Laboriosam, fuga.</p>
+                          <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------portfolio----------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="realhuman.png">
+                    <div class="layer">
+                        <h3>Real Time Human Detection & Counting</h3>
+                        <p>Detects and Counts the number of humans in a frame. </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="emot.gif">
+                    <div class="layer">
+                        <h3>Emotion Detection</h3>
+                        <p>Reads and displays emotions in realtime. </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pension.jpg">
+                    <div class="layer">
+                        <h3>Pension Recommendation</h3>
+                        <p>A trained model to guess the age of a person in realtime and then recommend the pension plan accordingly. </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!---------------contact--------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> shreyaaarov@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9696461081</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Shreyashree_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required> 
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Ⓒ shreya.Made with <i class="fa-sharp fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+        }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>
